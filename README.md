@@ -1,11 +1,10 @@
-# 50033-gamedev-lab4
-Unity project for Lab 4 Checkoff
+# 50033-gamedev-lab3
+Unity project for Lab 3 Checkoff
 
 ### Checkoff Status
-Gameplay can be seen [here](https://www.youtube.com/watch?v=cTBUi5aeSOw).
+Gameplay can be seen [here](https://www.youtube.com/watch?v=x604E0x_Xkk).
 
-* ObjectPooler implemented as per the tutorial, with a maximum of 5 goombas active at any time as seen in the video. For a fun twist, goombas rain from the sky relative to the player’s position!
-* Death animation similar to Mario classic with simple enemy hopping rejoice animations.
-* Powerups implemented as per the lab, but use Audiomixer snapshots and lighting/shader effects of previous labs for audio-visual feedback.
-* Hooked up all relevant variables in the GameConstants ScriptableObject.
-
+Implemented everything as per the lab tutorial with a few changes:
+* Jump particles are in world space, providing directional tracking of Mario’s body.
+* Combined task 1 and 4 to create a gradient shift effect for Mario. I demonstrate changing the material properties at runtime such as increasing/decreasing the frequency of the sine function (quite cool, similar to Razer synapse).
+* Used a single secondary camera with manually layered meshes for the parallax background (less layers and cameras to manage).
