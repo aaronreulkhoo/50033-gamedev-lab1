@@ -1,16 +1,8 @@
-# 50033-gamedev-lab2
-Unity project for Lab 2 Checkoff
+# 50033-gamedev-lab5
+Unity project for Lab 5 Checkoff
 
 ### Checkoff Status
-Gameplay can be seen [here](https://www.youtube.com/watch?v=cd40X-ZmdTA).
+Gameplay can be seen [here](https://www.youtube.com/watch?v=CeuTA7fb-k8).
 
-Implemented everything necessary for the lab checkoff with a few minor improvements:
-* Moved to boxcasting instead of collision events for ground checking(less layers + objects to manage, yay!)
-* Converted SpringJoint2D box hitting mechanism to collision angle checking + animation event (better performance and no more sagging blocks)
-* Created master block prefab with options to easily make interactive or normal blocks
-
-
-#### List of extra features (some carried over):
-* Singleton AudioManager instance to handle music/SFX
-* Used Coroutines to implement classic invisible blocks
-* Played around with URP shadow casters
+* Converted to ScriptableObject architecture, with score and powerups carried over between scenes.
+* Reused most mechanics from previous lab submission such as audio-visual feedback during active powerups and death animations/enemy celebration.
